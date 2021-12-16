@@ -17,6 +17,11 @@ const decodeClientState = (data) => {
   return {};
 };
 
+/**
+ * Bridge call to video room is not available in the Telny Node SDK - WIP
+ * 
+ * video_room_context - should use same scheme as you are using in telnyx video sdk
+ */
 const postBridgeCalls = async (callControlID) => {
   await axios
     .post(
